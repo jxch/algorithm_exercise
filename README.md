@@ -1,2 +1,2 @@
-# algorithm_exercise
-算法练习
+# algorithm
+算法实现及练习
