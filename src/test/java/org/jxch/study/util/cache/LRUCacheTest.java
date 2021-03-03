@@ -4,6 +4,13 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
+/**
+ * LRUCache 的测试用例
+ *
+ * @author jxch
+ * @since 1.8
+ * @see LRUCache
+ */
 @Slf4j
 class LRUCacheTest {
     private static final LRUCache<Integer> cache;
