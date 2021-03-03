@@ -7,6 +7,7 @@ import java.util.function.Function;
 
 /**
  * LRU 缓存算法是一种保留最近使用数据的算法，添加缓存时是头添加，获取缓存数据时把数据放到头部，淘汰末尾的数据。
+ * 基于 LinkedList 实现。
  *
  * 注意：线程不安全。
  *
