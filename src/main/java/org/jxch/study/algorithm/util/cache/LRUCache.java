@@ -1,4 +1,4 @@
-package org.jxch.study.util.cache;
+package org.jxch.study.algorithm.util.cache;
 
 import lombok.Getter;
 
