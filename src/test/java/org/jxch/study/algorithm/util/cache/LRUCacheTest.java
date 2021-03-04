@@ -13,36 +13,36 @@ import org.junit.jupiter.api.Test;
  */
 @Slf4j
 class LRUCacheTest {
-    private static final LRUCache<Integer> cache;
+    private static final LRUCache<Integer> LRU_CACHE;
 
     static {
-        cache = new LRUCache<>(5);
-        cache.put(1);
-        cache.put(2);
-        cache.put(3);
-        cache.put(4);
-        cache.put(5);
+        LRU_CACHE = new LRUCache<>(5);
+        LRU_CACHE.put(1);
+        LRU_CACHE.put(2);
+        LRU_CACHE.put(3);
+        LRU_CACHE.put(4);
+        LRU_CACHE.put(5);
     }
 
     @Test
     void put() {
-        cache.put(0);
+        LRU_CACHE.put(0);
         logCache();
     }
 
     @Test
     void get() {
-        cache.get(1);
+        LRU_CACHE.get(1);
         logCache();
     }
 
     @Test
     void findAndGet() {
-        cache.findAndGet(integer -> integer.equals(3));
+        LRU_CACHE.findAndGet(integer -> integer.equals(3));
         logCache();
     }
 
     void logCache() {
-        log.info("cache:" + JSON.toJSONString(cache));
+        log.info("cache:" + JSON.toJSONString(LRU_CACHE));
     }
 }
