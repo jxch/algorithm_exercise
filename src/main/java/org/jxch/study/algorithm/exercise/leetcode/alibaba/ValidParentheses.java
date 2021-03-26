@@ -12,6 +12,7 @@ import java.util.Stack;
  *
  * @author jxch
  * @since 1.8
+ * @see <a href="https://leetcode-cn.com/problems/valid-parentheses/">力扣：20. 有效的括号</a>
  */
 public class ValidParentheses {
 
