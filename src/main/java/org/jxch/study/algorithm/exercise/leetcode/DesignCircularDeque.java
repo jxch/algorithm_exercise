@@ -20,6 +20,7 @@ import java.util.Arrays;
  *
  * @author jxch
  * @since 1.8
+ * @see <a href="https://leetcode-cn.com/problems/design-circular-deque/">力扣：641. 设计循环双端队列</a>
  */
 public class DesignCircularDeque {
     private final int[] data;
