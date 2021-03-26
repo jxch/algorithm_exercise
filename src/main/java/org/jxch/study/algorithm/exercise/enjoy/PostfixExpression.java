@@ -64,10 +64,10 @@ public class PostfixExpression {
                 BigDecimal num1 = operandStack.pop();
                 BigDecimal num2 = operandStack.pop();
                 switch (spilt) {
-                    case "+" -> operandStack.push(num1.add(num2));
-                    case "-" -> operandStack.push(num1.subtract(num2));
-                    case "*" -> operandStack.push(num1.multiply(num2));
-                    case "/" -> operandStack.push(num1.divide(num2, RoundingMode.HALF_UP));
+                    case "+" -> operandStack.push(num2.add(num1));
+                    case "-" -> operandStack.push(num2.subtract(num1));
+                    case "*" -> operandStack.push(num2.multiply(num1));
+                    case "/" -> operandStack.push(num2.divide(num1, RoundingMode.HALF_UP));
                     default -> throw new IllegalArgumentException("非法操作符：" + spilt);
                 }
             } else {

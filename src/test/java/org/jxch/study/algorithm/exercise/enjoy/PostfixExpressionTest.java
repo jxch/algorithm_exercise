@@ -21,6 +21,6 @@ class PostfixExpressionTest {
     @Test
     void compute() {
         PostfixExpression postfixExpression = new PostfixExpression();
-        log.info(postfixExpression.compute("( 1 + 1.1 ) * 8").toString());
+        log.info(postfixExpression.compute("( 1 + 1.1 ) * 8 / 2").toString());
     }
 }
